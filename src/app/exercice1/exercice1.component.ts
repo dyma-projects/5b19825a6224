@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Exercice1EnfantComponent} from './exercice1-enfant.component';
+import { Exercice1EnfantComponent } from './exercice1-enfant/exercice1-enfant.component';
 
 @Component({
   selector: 'app-exercice1',

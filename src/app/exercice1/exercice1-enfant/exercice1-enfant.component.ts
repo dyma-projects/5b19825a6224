@@ -1,6 +1,5 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
-import { Exercice1Component } from './exercice1.component';
 
 @Component({
   selector: 'app-exercice1-enfant',
@@ -9,8 +8,8 @@ import { Exercice1Component } from './exercice1.component';
 })
 export class Exercice1EnfantComponent implements OnInit {
 
-  @Input() number: number = 0;
-  @Output('change') public changeNumber:EventEmitter<number> =  new EventEmitter();
+  number: number = 0;
+  @Output() public changeNumber = new EventEmitter();
 
   constructor() { }
 
@@ -20,14 +19,14 @@ export class Exercice1EnfantComponent implements OnInit {
   add(){
     this.number++;
     this.changeNumber.emit({
-      value:this.number;
+      value:this.number
     });
   }
 
   remove(){
     this.number--;
     this.changeNumber.emit({
-      value:this.number;
+      value:this.number
     });
   }
 }

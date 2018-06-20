@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
-import {Exercice1EnfantComponent} from '../../exercice1-enfant.component';
 
 @Component({
   selector: 'app-exercice2',
